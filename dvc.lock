@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  read_csv:
+    cmd: python read.py
+    deps:
+    - path: data.csv
+      hash: md5
+      md5: de0957f4e617ead63b0c1ab297e75b7f
+      size: 4875510
+    - path: read.py
+      hash: md5
+      md5: cab24ac81981198c82587aa915ef6e30
+      size: 301
+    outs:
+    - path: output.txt
+      hash: md5
+      md5: eadc5c3a7c0790e67fb1fcfdeec6b558
+      size: 1489

@@ -1,0 +1,8 @@
+stages:
+  read_csv:
+    cmd: python read.py
+    deps:
+    - data.csv
+    - read.py
+    outs:
+    - output.txt
